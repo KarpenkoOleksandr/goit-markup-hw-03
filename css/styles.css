@@ -1,0 +1,164 @@
+:root {
+  --primary-text-color: #434455;
+  --primary-white-color: #fff;
+  --action-color: #404bbf;
+  --accent-color: #4d5ae5;
+  --secondary-cloud-color: #f4f4fd;
+  --secondary-dark-color: #2e2f42;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ================COMPONENTS */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-bottom {
+  color: var(--secondary-cloud-color);
+}
+
+.logo-top {
+  color: var(--secondary-dark-color);
+}
+
+.menu-link {
+  color: var(--secondary-dark-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--action-color);
+}
+
+.menu-link.current {
+  color: var(--action-color);
+}
+
+.content-title {
+  color: var(--secondary-dark-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.item-title {
+  color: var(--secondary-dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.description-dark {
+  color: var(--primary-text-color);
+}
+
+.description-light {
+  color: var(--secondary-cloud-color);
+}
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--action-color);
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--secondary-cloud-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--action-color);
+}
+/* ================/COMPONENTS */
+
+/* ================HEADER */
+.contacts {
+  font-style: normal;
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--action-color);
+}
+/* ================/HEADER */
+
+/* ================HERO */
+.hero {
+  background-color: var(--secondary-dark-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* ================/HERO */
+
+/* ================TEAM CONTENT */
+.team-content {
+  background-color: var(--secondary-cloud-color);
+}
+.team-content .content-item {
+  background-color: var(--primary-white-color);
+}
+
+/* ================/TEAM CONTENT */
+
+/* ================FOOTER */
+.footer {
+  background-color: var(--secondary-dark-color);
+}
+/* ================/FOOTER */
