@@ -11,78 +11,89 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <!-- Navigation -->
-      <nav class="menu">
-        <a href="./index.html" class="logo link">
-          Web<span class="logo-top">Studio</span></a
-        >
-        <ul class="menu-list list">
-          <li class="menu-item">
-            <a href="./index.html" class="menu-link link">Studio</a>
-          </li>
-          <li class="menu-item">
-            <a href="./portfolio.html" class="menu-link link">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Header contacts -->
-      <address class="contacts">
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contact-link link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-item">
-            <a href="tel:+110001111111" class="contact-link link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container header-container">
+        <!-- Navigation -->
+        <nav class="menu">
+          <a href="./index.html" class="logo link">
+            Web<span class="logo-top">Studio</span></a
+          >
+          <ul class="menu-list list">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-link link">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Header contacts -->
+        <address class="contacts">
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="contact-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+110001111111" class="contact-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- Main conent -->
     <main>
       <!-- Filter buttons -->
       <section class="content">
-        <h1 hidden>Project cards</h1>
-        <ul class="filter-button list">
-          <li class="button-item">
-            <button type="button" class="button secondary">All</button>
-          </li>
-          <li class="button-item">
-            <button type="button" class="button secondary">Web Site</button>
-          </li>
-          <li class="button-item">
-            <button type="button" class="button secondary">App</button>
-          </li>
-          <li class="button-item">
-            <button type="button" class="button secondary">Design</button>
-          </li>
-          <li class="button-item">
-            <button type="button" class="button secondary">Marketing</button>
-          </li>
-        </ul>
-        <ul class="project-list list">
+        <div class="conteiner">
+          <h1 class="visually-hidden">Project cards</h1>
+          <ul class="filter-button list">
+            <li class="button-item">
+              <button type="button" class="button secondary">All</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button secondary">Web Site</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button secondary">App</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button secondary">Design</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="button secondary">Marketing</button>
+            </li>
+          </ul>
+        </div>
+        <div class="conteiner">
+         <ul class="project-list list">
           <li class="project-item">
             <a href="" class="project-link link"
               ><img
+                class="image"
                 src="./images/projectcard-1.jpg"
                 alt="app interface"
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Banking App Interface Concept</h2>
-              <p class="description description-dark">App</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Banking App Interface Concept</h2>
+              <p class="description description-dark">App</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -92,9 +103,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Cashless Payment</h2>
-              <p class="description description-dark">Marketing</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Cashless Payment</h2>
+              <p class="description description-dark">Marketing</p></a>
+              </div>  
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -104,9 +116,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Meditation App</h2>
-              <p class="description description-dark">App</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Meditation App</h2>
+              <p class="description description-dark">App</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -116,9 +129,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Taxi Service</h2>
-              <p class="description description-dark">Marketing</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Taxi Service</h2>
+              <p class="description description-dark">Marketing</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -128,9 +142,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Screen Illustrations</h2>
-              <p class="description description-dark">Design</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Screen Illustrations</h2>
+              <p class="description description-dark">Design</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -140,9 +155,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Online Courses</h2>
-              <p class="description description-dark">Marketing</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Online Courses</h2>
+              <p class="description description-dark">Marketing</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -152,9 +168,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Instagram Stories Concept</h2>
-              <p class="description description-dark">Design</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Instagram Stories Concept</h2>
+              <p class="description description-dark">Design</p></a>
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -164,9 +181,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Organic Food</h2>
-              <p class="description description-dark">Web Site</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Organic Food</h2>
+              <p class="description description-dark">Web Site</p></a >
+              </div>
           </li>
           <li class="project-item">
             <a href="" class="project-link link"
@@ -176,21 +194,25 @@
                 width="360"
                 height="300"
               />
-              <h2 class="item-title">Fresh Coffee</h2>
-              <p class="description description-dark">Web Site</p></a
-            >
+              <div class="project-wrapper">
+                <h2 class="item-title">Fresh Coffee</h2>
+              <p class="description description-dark">Web Site</p></a>
+              </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="logo link">
-        Web<span class="logo-bottom">Studio</span></a
-      >
-      <p class="description description-light">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container footer-content">
+        <a href="./index.html" class="logo footer-logo link">
+          Web<span class="logo-bottom">Studio</span></a
+        >
+        <p class="description footer-description description-light">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
