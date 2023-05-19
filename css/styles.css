@@ -326,12 +326,6 @@ body {
   background-color: var(--secondary-dark-color);
 }
 
-.footer-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -369,7 +363,7 @@ body {
 }
 
 .project-wrapper {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   flex-basis: calc((100% - 2 * 24px) / 3);
