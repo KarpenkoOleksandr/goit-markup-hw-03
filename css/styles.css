@@ -141,7 +141,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 .button.primary {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
   min-width: 169px;
   height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -167,6 +172,8 @@ body {
 
 .button.secondary:hover,
 .button.secondary:focus {
+  border: 1px solid transparent;
+
   color: var(--primary-white-color);
   background-color: var(--action-color);
 }
@@ -175,10 +182,17 @@ body {
 
 /* ================HEADER */
 
+.header-menu {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-logo {
+  margin-right: 76px;
 }
 
 .menu {
@@ -189,7 +203,6 @@ body {
 .menu-list {
   display: flex;
   align-items: center;
-  margin-left: 76px;
 }
 
 .menu-link {
@@ -198,8 +211,8 @@ body {
   padding-bottom: 24px;
 }
 
-.menu-list .menu-item + .menu-item {
-  margin-left: 40px;
+.menu-list {
+  gap: 40px;
 }
 
 .contacts {
@@ -259,15 +272,17 @@ body {
 
 /* ================FEATURES */
 
-.features-conteiner {
+.features-container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .features-item {
   display: flex;
+  flex-direction: column;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 /* ================/FEATURES */
 
 /* ================PRODUCT CONTENT */
@@ -299,7 +314,7 @@ body {
 }
 
 .employees-wrapper {
-  padding: 32px 6px;
+  padding: 32px 16px;
 }
 /* ================/TEAM CONTENT */
 
@@ -313,26 +328,34 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: last baseline;
+  justify-content: center;
   flex-direction: column;
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
   width: 264px;
 }
 
 .footer-description {
-  width: 264px;
+  max-width: 264px;
 }
 /* ================/FOOTER */
+
+/* ================CONTENT */
+.content {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+/* ================/CONTENT */
 
 /* ================FILTER BUTTONS */
 .filter-button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
+  margin-bottom: 72px;
 }
 /* ================/FILTER BUTTONS */
 
@@ -341,16 +364,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px 48px;
-  margin-top: 72px;
-  padding-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .project-wrapper {
   padding: 32px 0 32px 16px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 /* ================/PROJECT-LIST */
